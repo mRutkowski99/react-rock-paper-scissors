@@ -9,7 +9,7 @@ const StyledOption = styled.div`
   transform: translate(-50%, -50%);
 
   .outer {
-    width: clamp(9rem, 20vw, 12rem);
+    width: clamp(8rem, 20vw, 13rem);
     aspect-ratio: 1;
     border-radius: 100%;
     background: ${(props) => props.attributes.gradient};
@@ -21,7 +21,7 @@ const StyledOption = styled.div`
   }
 
   .inner {
-    width: calc(100% - 2rem);
+    width: 70%;
     aspect-ratio: 1;
     border-radius: 100%;
     background-color: #fff;

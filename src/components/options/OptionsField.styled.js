@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledOptionField = styled.div`
-  width: 60vw;
+  width: 50vw;
   max-width: 30rem;
   aspect-ratio: 1;
   position: relative;

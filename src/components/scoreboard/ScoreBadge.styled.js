@@ -16,7 +16,7 @@ const StyledScoreBadge = styled.div`
   }
 
   .score-badge__points {
-    font-size: 4.5rem;
+    font-size: clamp(3.5rem, 8vw, 4.5rem);
     color: hsl(229, 25%, 31%);
     font-weight: 700;
   }
