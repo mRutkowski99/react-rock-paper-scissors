@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 
 function App() {
   const showModal = useSelector((state) => state.ui.showModal);
+  const gameStarted = useSelector((state) => state.game.gameStarted);
 
   return (
     <>
