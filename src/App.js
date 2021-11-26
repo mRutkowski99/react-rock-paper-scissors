@@ -1,7 +1,13 @@
+import Scoreboard from "./components/scoreboard/Scoreboard";
 import OptionsField from "./components/options/OptionsField";
 
 function App() {
-  return <OptionsField />;
+  return (
+    <>
+      <Scoreboard />
+      <OptionsField />
+    </>
+  );
 }
 
 export default App;
