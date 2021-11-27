@@ -4,16 +4,17 @@ const StyledOption = styled.div`
   cursor: pointer;
   position: absolute;
   z-index: 10;
-  top: ${(props) => props.styles.top};
-  left: ${(props) => props.styles.left};
+  top: ${(props) => props.styles?.top};
+  left: ${(props) => props.styles?.left};
   transform: translate(-50%, -50%);
+  width: clamp(8rem, 20vw, 13rem);
 
   .outer {
-    width: clamp(8rem, 20vw, 13rem);
+    width: 100%;
     aspect-ratio: 1;
     border-radius: 100%;
-    background: ${(props) => props.styles.gradient};
-    filter: drop-shadow(0 6px 0 ${(props) => props.styles.dropshadow});
+    background: ${(props) => props.styles?.gradient};
+    filter: drop-shadow(0 6px 0 ${(props) => props.styles?.dropshadow});
 
     display: flex;
     justify-content: center;

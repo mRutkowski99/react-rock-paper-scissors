@@ -1,4 +1,16 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const slideDown = keyframes`
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) translateY(-4rem);
+  }
+
+  100% {
+    opcaity: 1;
+    transform: translate(-50%, -50%) translateY(0);
+  }
+`;
 
 export const StyledBackdrop = styled.div`
   position: absolute;
@@ -22,6 +34,7 @@ export const StyledModalOverlay = styled.div`
   border-radius: 0;
   background-color: #fff;
   max-width: 50rem;
+  animation: ${slideDown} ease-out 500ms;
 
   @media screen and (min-width: 500px) {
     & {

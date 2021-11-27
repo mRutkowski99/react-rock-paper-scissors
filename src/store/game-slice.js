@@ -25,8 +25,8 @@ const getWinner = (playerChoice, computerChoice, results) => {
 
 const initialState = {
   gameStarted: false,
-  playerChoice: null,
-  computerChoice: null,
+  playerChoice: "lizard",
+  computerChoice: "rock",
   winner: null,
   points: 0,
 };
