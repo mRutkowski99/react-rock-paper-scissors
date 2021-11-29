@@ -29,6 +29,24 @@ const rotateFrontAnimation = css`
   animation: ${rotateFront} 1000ms ease-out 1000ms forwards;
 `;
 
+const winner = keyframes`
+  0% {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(3);
+    opacity: 0;
+  }
+`;
+
+const winnerAnimation = css`
+  animation: ${winner} 500ms ease-out 2000ms 3;
+`;
+
 const StyledGameOption = styled(StyledOption)`
   cursor: default;
   position: relative;
@@ -38,6 +56,19 @@ const StyledGameOption = styled(StyledOption)`
   width: clamp(12rem, 20vw, 20rem);
   aspect-ratio: 1;
   perspective: 150rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -10;
+    border-radius: 100%;
+    background-color: transparent;
+    ${(props) => props.isWinner && winnerAnimation}
+  }
 
   .front {
     width: 100%;

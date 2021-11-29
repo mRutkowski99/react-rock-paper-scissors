@@ -5,6 +5,7 @@ const GameOption = (props) => {
     <StyledGameOption
       styles={props.styles}
       animateRotation={props.animateRotation}
+      isWinner={props.isWinner}
     >
       <div className="front">
         <div className="outer">

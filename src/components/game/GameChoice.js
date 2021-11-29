@@ -4,8 +4,13 @@ import StyledGameChoice from "./GameChoice.styled";
 import { useSelector } from "react-redux";
 
 const GameChoice = (props) => {
-  const text = props.player === "user" ? "You picked" : "The house picked";
+  const text = props.player === "player" ? "You picked" : "The house picked";
   const choice = optionsAttributes[props.choice];
+
+  const winner = useSelector((state) => state.game.winner);
+  const hasWon = winner === props.player;
+
+  console.log(props.player, hasWon);
 
   return (
     <StyledGameChoice>
@@ -14,6 +19,7 @@ const GameChoice = (props) => {
         src={choice.icon}
         className="option"
         animateRotation={props.animateRotation}
+        isWinner={hasWon}
       />
       <h3>{text}</h3>
     </StyledGameChoice>

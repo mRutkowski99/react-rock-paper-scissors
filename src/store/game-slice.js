@@ -25,8 +25,8 @@ const getWinner = (playerChoice, computerChoice, results) => {
 
 const initialState = {
   gameStarted: false,
-  playerChoice: "lizard",
-  computerChoice: "rock",
+  playerChoice: null,
+  computerChoice: null,
   winner: null,
   points: 0,
 };
@@ -36,9 +36,6 @@ const gameSlice = createSlice({
   initialState: initialState,
   reducers: {
     startGame(state, action) {
-      //If game already started prevent from starting new one
-      if (state.gameStarted) return;
-
       state.gameStarted = true;
 
       //Get player choice and random generated choice of computer
@@ -49,15 +46,18 @@ const gameSlice = createSlice({
     },
 
     resetGame(state) {
-      const points = state.points;
-      state = {
-        ...initialState,
-        points: points,
-      };
+      state.gameStarted = false;
+      state.playerChoice = null;
+      state.computerChoice = null;
+      state.winner = null;
     },
 
     addPoint(state) {
-      if (state.winner === "player") state.points++;
+      state.points = state.points + 1;
+    },
+
+    setInitialPoints(state, action) {
+      state.points = +action.payload;
     },
   },
 });

@@ -9,7 +9,7 @@ const Game = () => {
 
   return (
     <StyledGame>
-      <GameChoice player="user" choice={userChoice} />
+      <GameChoice player="player" choice={userChoice} />
       <GameChoice
         player="computer"
         choice={computerChoice}
