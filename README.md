@@ -1,5 +1,5 @@
 # Rock-Paper-Scissors-Lizard-Spock Game
-This is the solution to the [Rock, Paper, Scissors](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH) challenge from frontendmentor.io with bonus version of game (Rock, Paper, Scissors, Lizard, Spock) inspired by The Big Bang Theory ([checkout this clip](https://www.youtube.com/watch?v=iSHPVCBsnLw&ab_channel=WarnerBros.TV))
+This is the solution to the [Rock, Paper, Scissors](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH) challenge from frontendmentor.io with bonus version of game (Rock, Paper, Scissors, Lizard, Spock) inspired by The Big Bang Theory ([check out this clip](https://www.youtube.com/watch?v=iSHPVCBsnLw&ab_channel=WarnerBros.TV))
 
 ## Overview
 ### The challenge
@@ -10,7 +10,7 @@ User should be able to:
 
 ### Screenshots
 ![](public/rock-paper-scissors-35dfd.web.app.png)
-![](/public/FireShot Capture 025 - React App - rock-paper-scissors-35dfd.web.app.png)
+![](public/FireShot-rock-paper-scissors-35dfd.web.app.png)
 ### Live 
 Check out [live](https://rock-paper-scissors-35dfd.web.app/)
 
