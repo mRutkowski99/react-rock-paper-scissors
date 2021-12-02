@@ -9,7 +9,7 @@ User should be able to:
 - Play Rock, Paper, Scissors, Lizard, Spock against the computer
 
 ### Screenshots
-![](/public/FireShot Capture 024 - React App - rock-paper-scissors-35dfd.web.app.png)
+![](public/rock-paper-scissors-35dfd.web.app.png)
 ![](/public/FireShot Capture 025 - React App - rock-paper-scissors-35dfd.web.app.png)
 ### Live 
 Check out [live](https://rock-paper-scissors-35dfd.web.app/)
